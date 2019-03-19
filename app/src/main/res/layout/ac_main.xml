@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_one"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_keyboard"
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:maxLength="1"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/et_two"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_keyboard"
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:maxLength="1"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/et_three"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_keyboard"
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:maxLength="1"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/et_four"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_keyboard"
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:maxLength="1"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/et_five"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_keyboard"
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:maxLength="1"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/et_six"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_keyboard"
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:maxLength="1"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/et_seven"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_keyboard"
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:maxLength="1"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/et_eight"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_keyboard"
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/Re_top"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_above="@+id/Key_board"
+        android:background="@color/colorE6E6E6"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/key_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:text="取消"
+            android:textColor="@color/colorC8161d"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/key_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:text="确定"
+            android:textColor="@color/color333333"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/Key_board"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorC7cfd6"
+        android:keyBackground="@drawable/a_sh_5d_9f9f9f"
+        android:keyPreviewHeight="40dp"
+        android:keyPreviewLayout="@layout/item_key"
+        android:keyPreviewOffset="4dp"
+        android:keyTextColor="@color/color333333"
+        android:keyTextSize="14dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:shadowColor="@color/colorC8161d"
+        android:shadowRadius="0"
+        android:visibility="gone" />
+
+</RelativeLayout>
